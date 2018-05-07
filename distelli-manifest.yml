@@ -13,7 +13,8 @@ kwsoopuppet/jenkins_java_web_app:
   Env:
     # Set any environment variables in this section.   
     # These are available during all phases of a deploy.
-    PORT=20000
+    - PORT: "20000"
+    - ARGS: "$PORT"
  
   PreInstall:  
     # Use this section to install any deployment pre-requisites.
@@ -23,4 +24,4 @@ kwsoopuppet/jenkins_java_web_app:
 
   Exec:
     # Use this section to run the application.
-    java -DappPort=$PORT -jar target/java-webapp-*.jar
+    - exec java -DappPort=$PORT -jar target/java-webapp-*.jar
