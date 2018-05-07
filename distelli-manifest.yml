@@ -4,10 +4,6 @@ kwsoopuppet/jenkins_java_web_app:
   Build:
     - echo "Built and tested with Jenkins"
        
-  PkgInclude:
-    # Include ALL files in the release package
-    - '*'
-
   ###Below is deployment phases   
   
   Env:
@@ -25,3 +21,6 @@ kwsoopuppet/jenkins_java_web_app:
   Exec:
     # Use this section to run the application.
     - exec java -DappPort=$PORT -jar target/java-webapp-*.jar
+    
+  PkgInclude:
+    - target/*.jar
