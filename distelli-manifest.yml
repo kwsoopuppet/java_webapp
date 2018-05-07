@@ -20,7 +20,7 @@ kwsoopuppet/jenkins_java_web_app:
 
   Exec:
     # Use this section to run the application.
-    - java -DappPort=$PORT -jar target/java-webapp-*.jar
+    - /usr/bin/java -DappPort=$PORT -jar target/java-webapp-*.jar
     
   PkgInclude:
     - target/java-webapp-*.jar
