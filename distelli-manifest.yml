@@ -10,7 +10,7 @@ kwsoopuppet/jenkins_java_web_app:
     # Set any environment variables in this section.   
     # These are available during all phases of a deploy.
     - PORT: "20000"
-    - ARGS: "$PORT"
+    
  
   PreInstall:  
     # Use this section to install any deployment pre-requisites.
