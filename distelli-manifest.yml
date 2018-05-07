@@ -23,4 +23,4 @@ kwsoopuppet/jenkins_java_web_app:
     - java -DappPort=$PORT -jar target/java-webapp-*.jar
     
   PkgInclude:
-    - '*'
+    - target/java-webapp-*.jar
