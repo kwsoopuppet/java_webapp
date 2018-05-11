@@ -1,6 +1,6 @@
 FROM openjdk:9
 MAINTAINER ipcrm
-COPY target/java-webapp-1.2.jar /usr/src/java-webapp-1.2.jar
+COPY target/java-webapp-*.jar /usr/src/java-webapp-*.jar
 WORKDIR /usr/src
-CMD java -jar java-webapp-1.2.jar
+CMD java -jar -DappPort="30000" java-webapp-*.jar
 EXPOSE 30000
