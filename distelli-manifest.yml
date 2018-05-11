@@ -1,4 +1,4 @@
-kwsoopuppet/jenkins_java_web_app: 
+kwsoopuppet/docker_java_web_app: 
   # Distelli Manifest example 
   
   Build:
